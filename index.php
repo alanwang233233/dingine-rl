@@ -53,7 +53,6 @@ class Bot {
     public $cs;
     public $session;
     use Webhook;
-    use Tookit;
     public function __construct() {
         $body = @file_get_contents('php://input');
         $json = json_decode($body,true);
